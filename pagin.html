@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>jPaginator - jQuery plugin</title>  
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+        <script type="text/javascript" src="js/easypaginate.js"></script>
+        <script type="text/javascript">
+            jQuery(function($){
+            $('ul#items').easyPaginate({
+            step:10
+            });
+            }); 
+        </script>
+    </head>
+<body>
+    <ul id="items">
+  <li>Page 1</li>
+  <li>Page 2</li>
+  <li>Page 3</li>
+  <li>Page 4</li>
+  <li>Page 5</li>
+  <li>Page 6</li>
+  <li>Page 7</li>
+  <li>Page 8</li>
+  <li>Page 9</li>
+  <li>Page 10</li>
+  <li>Page 11</li>
+  <li>Page 12</li>
+  <li>Page 13</li>
+  <li>Page 14</li>
+</ul>
+<ol id="pagination">
+    <li class="prev" style="display: list-item;">Previous</li>
+    <li data-index="1" class="">1</li>
+    <li data-index="2" class="">2</li>
+    <li data-index="3">3</li><li data-index="4" class="">4</li>
+    <li data-index="5" class="current">5</li>
+    <li class="next" style="display: none;">Next</li></ol>
+</body>
